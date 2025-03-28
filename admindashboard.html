@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - BusNet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white p-6 shadow-lg rounded-lg">
+            <div class="flex items-center space-x-2 mb-6">
+                <div class="text-2xl font-bold">🚌</div>
+                <span class="text-lg font-semibold text-gray-700">BusNet Admin</span>
+            </div>
+            <nav class="space-y-4">
+                <a href="admindashboard.html" class="block py-2 px-4 bg-gray-300 rounded-md">Dashboard</a>
+                <a href="admin-manage-buses.html" class="block py-2 px-4 hover:bg-gray-200 rounded-md">Manage Buses</a>
+                <a href="admin-manage-terminals.html" class="block py-2 px-4 hover:bg-gray-200 rounded-md">Manage Terminals</a>
+                <a href="admin-manage-routes.html" class="block py-2 px-4 hover:bg-gray-200 rounded-md">Manage Routes</a>
+                <a href="admin-tickets.html" class="block py-2 px-4 hover:bg-gray-200 rounded-md">Tickets</a>
+            </nav>
+            <button id="logoutBtn" class="w-full mt-6 bg-red-500 text-white py-2 rounded-md">Logout</button>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 to-blue-600 text-white p-10 rounded-lg">
+            <h1 class="text-3xl font-bold">BusNet Admin Dashboard</h1>
+
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
+                <!-- Manage Buses Card -->
+                <div class="bg-white text-gray-700 p-6 rounded-lg shadow-md flex flex-col items-center space-y-3">
+                    <span class="text-4xl">🚌</span>
+                    <h2 class="text-lg font-semibold">Manage Buses</h2>
+                </div>
+
+                <!-- Manage Routes Card -->
+                <div class="bg-white text-gray-700 p-6 rounded-lg shadow-md flex flex-col items-center space-y-3">
+                    <span class="text-4xl">🗺️</span>
+                    <h2 class="text-lg font-semibold">Manage Routes</h2>
+                </div>
+
+                <!-- Manage Terminals Card -->
+                <div class="bg-white text-gray-700 p-6 rounded-lg shadow-md flex flex-col items-center space-y-3">
+                    <span class="text-4xl">🚏</span>
+                    <h2 class="text-lg font-semibold">Manage Terminals</h2>
+                </div>
+
+                <!-- Ticketing System Card -->
+                <div class="bg-white text-gray-700 p-6 rounded-lg shadow-md flex flex-col items-center space-y-3">
+                    <span class="text-4xl">🎫</span>
+                    <h2 class="text-lg font-semibold">Ticketing System</h2>
+                </div>
+
+                <!-- Financial Reports Card -->
+                <div class="bg-white text-gray-700 p-6 rounded-lg shadow-md flex flex-col items-center space-y-3">
+                    <span class="text-4xl">📊</span>
+                    <h2 class="text-lg font-semibold">Financial Reports</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Logout button function
+        document.getElementById("logoutBtn").addEventListener("click", function() {
+            window.location.href = "adminlogin.html";
+        });
+    </script>
+</body>
+</html>
