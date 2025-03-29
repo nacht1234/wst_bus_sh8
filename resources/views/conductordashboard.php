@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conductor Dashboard - Spark Condukter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white p-6 shadow-lg rounded-lg">
+            <div class="flex items-center space-x-2 mb-6">
+                <div class="text-2xl font-bold">S</div>
+                <span class="text-lg font-semibold text-gray-700">Spark Condukter</span>
+            </div>
+            <nav class="space-y-4">
+                <a href="" class="block py-2 px-4 bg-gray-300 rounded-md">Dashboard</a>
+                <a href="/conductor-passengerlist" class="block py-2 px-4 hover:bg-gray-200 rounded-md">Passenger List</a>
+                <a href="/conductor-ticketvalid" class="block py-2 px-4 hover:bg-gray-200 rounded-md">Ticket Validation</a>
+            </nav>
+            <button id="logoutBtn" class="w-full mt-6 bg-red-500 text-white py-2 rounded-md">Logout</button>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 to-blue-600 text-white p-10 rounded-lg">
+            <h1 class="text-3xl font-bold">Spark Condukter</h1>
+
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
+                <!-- Buses & Routes Card -->
+                <div class="bg-white text-gray-700 p-6 rounded-lg shadow-md flex flex-col items-center space-y-3">
+                    <span class="text-4xl">🔗</span>
+                    <h2 class="text-lg font-semibold">Buses & Routes</h2>
+                </div>
+
+                <!-- Passengers Card -->
+                <div class="bg-white text-gray-700 p-6 rounded-lg shadow-md flex flex-col items-center space-y-3">
+                    <span class="text-4xl">👥</span>
+                    <h2 class="text-lg font-semibold">10 Passengers</h2>
+                </div>
+
+                <!-- Your Information Card -->
+                <div class="bg-white text-gray-700 p-6 rounded-lg shadow-md flex flex-col items-center space-y-3">
+                    <span class="text-4xl">ℹ️</span>
+                    <h2 class="text-lg font-semibold">Your Information</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Logout button function
+        document.getElementById("logoutBtn").addEventListener("click", function() {
+            window.location.href = "/";
+        });
+    </script>
+</body>
+</html>

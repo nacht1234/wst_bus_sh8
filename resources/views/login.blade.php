@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BusNet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-96 text-center">
+        <h2 class="text-2xl font-bold mb-6">Login</h2>
+        
+        <!-- Login Form -->
+        <form action="dashboard" class="mb-4">
+            <input type="email" name="email" placeholder="Email" class="w-full p-2 mb-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            <input type="password" name="password" placeholder="Password" class="w-full p-2 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Login</button>
+        </form>
+        
+        <hr class="my-4">
+        
+        <p class="mb-2 text-gray-600">Or continue as:</p>
+        <a href="/adminlogin" class="block bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 mb-4">Login as Admin</a>
+        <a href="/driverlogin" class="block bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 mb-4">Login as Driver</a>
+        <a href="/conductorlogin" class="block bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 mb-4">Login as Conductor</a>
+
+        <p class="mt-4 text-gray-600">Don't have an account?</p>
+        <a href="register" class="block bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600">Register</a>
+    </div>
+</body>
+</html>

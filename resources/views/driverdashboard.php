@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard - BusNet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<div class="min-h-screen flex bg-gray-220 p-4">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white p-6 shadow-lg rounded-lg">
+        <div class="flex items-center space-x-2 mb-6">
+            <div class="text-2xl font-bold">S</div>
+            <span class="text-lg font-semibold">Spark Driver</span>
+        </div>
+        <nav class="space-y-4">
+            <a href="" class="block py-2 px-4 bg-gray-300 rounded-md">Dashboard</a>
+            <a href="/driver-sched" class="block py-2 px-4 hover:bg-gray-200 rounded-md">Schedule & Time Management</a>
+            <a href="/driver-notification" class="block py-2 px-4 hover:bg-gray-200 rounded-md">Notifications</a>
+            <a href="/driver-passenger" class="block py-2 px-4 hover:bg-gray-200 rounded-md">Passengers</a>
+        </nav>
+        <button class="w-full mt-6 bg-black text-white py-2 rounded-md">Logout</button>
+    </aside>
+    
+    <!-- Main Content -->
+    <div class="flex-1 flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 to-blue-600 text-white p-10 rounded-lg">
+        <h1 class="text-3xl font-bold">Spark Driver</h1>
+        <div class="grid grid-cols-2 gap-6 mt-10">
+            <div class="bg-white p-6 rounded-lg text-black flex flex-col items-center shadow-md">
+                <div class="text-4xl">🔗</div>
+                <p class="mt-2">Buses & Routes</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg text-black flex flex-col items-center shadow-md">
+                <div class="text-4xl">👤</div>
+                <p class="text-lg font-bold">50</p>
+                <p class="mt-2">Current Reservations</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg text-black flex flex-col items-center shadow-md col-span-2">
+                <div class="text-4xl">👤</div>
+                <p class="mt-2">Your Information</p>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
